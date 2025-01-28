@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Message</title>
     <style>
-        /* Extender el fondo gris a toda la pantalla */
+        /* Asegurar que el fondo cubra toda la pantalla */
         html, body {
             margin: 0;
             padding: 0;
-            height: 100%;
-            background-color: #F7F7F5; /* Fondo gris */
+            height: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #F7F7F5; /* Fondo gris */
         }
 
-        /* Hacer que el contenedor cubra toda la pantalla */
+        /* Ajustar el contenedor para que tome toda la altura */
         .container {
             width: 100%;
-            height: 100%;
+            height: 100vh; /* Ocupa toda la altura */
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
         }
 
-        /* Mantener el mensaje con fondo blanco */
+        /* Estilo del mensaje */
         .message-box {
             width: 80%;
             max-width: 800px;
