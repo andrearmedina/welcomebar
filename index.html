@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Message</title>
     <style>
-        /* Asegurar que el fondo gris se extienda a todo el largo */
-        body, html {
+        /* Extender el fondo gris a toda la pantalla */
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+            background-color: #F7F7F5; /* Fondo gris */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Hacer que el contenedor cubra toda la pantalla */
+        .container {
+            width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #F7F7F5; /* Fondo gris */
+            flex-direction: column;
         }
 
-        .container {
-            width: 80%; /* Ajustar si es necesario */
+        /* Mantener el mensaje con fondo blanco */
+        .message-box {
+            width: 80%;
             max-width: 800px;
             padding: 40px;
-            background-color: white; /* Mantener el fondo blanco en el mensaje */
+            background-color: white;
             border-radius: 12px;
             text-align: justify;
             font-family: sans-serif;
@@ -45,11 +56,13 @@
 <body>
 
     <div class="container">
-        <h2>Welcome to the team!</h2>
-        <p>We’re thrilled to have you on board! You’re joining an awesome crew focused on delivering top-notch support.</p>
-        <p>With training and a supportive team, we’ve got your back from day one.</p>
-        <br> 
-        <p class="bold">Let’s make great things happen together! 👊</p>
+        <div class="message-box">
+            <h2>Welcome to the team!</h2>
+            <p>We’re thrilled to have you on board! You’re joining an awesome crew focused on delivering top-notch support.</p>
+            <p>With training and a supportive team, we’ve got your back from day one.</p>
+            <br> 
+            <p class="bold">Let’s make great things happen together! 👊</p>
+        </div>
     </div>
 
 </body>
